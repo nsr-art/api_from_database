@@ -9,10 +9,10 @@ app = Flask(__name__)
 
 @app.before_request
 def db_connect():
-    g.conn = MySQLdb.connect(host='34.87.24.61',
-                                user='nsr-admin',
-                                passwd='natthapon024299',
-                                db='smart_home')
+    g.conn = MySQLdb.connect(host='',
+                                user='',
+                                passwd='',
+                                db='')
     g.cursor = g.conn.cursor()
 
 @app.after_request
